@@ -6,7 +6,7 @@
 <html>
 <head>
 <!-- https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./resources/css/bootstrap.min.css">
 <title>상품 목록</title>
 </head>
 <body>
@@ -29,6 +29,7 @@
         Product product = listofProducts.get(i);
      %>
         <div class="col-md-4">
+        	<img src="./resources/images/<%=product.getFilename() %>" style="height: 200px; object-fit:cover">
            <h3><%=product.getPname() %></h3>
            <p><%=product.getDescriotion()%>
            <p><%=product.getUnitPrice() %>원
